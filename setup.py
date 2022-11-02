@@ -1,15 +1,14 @@
 from setuptools import setup, find_packages
 
 __version__= 'dev'
-packages = find_packages()
 
 setup(
     name='sentiment-module',
     version=__version__,
 
-    url='https://github.com/MichaelKim0407/tutorial-pip-package',
-    author='Michael Kim',
-    author_email='mkim0407@gmail.com',
+    url='https://github.com/hamidm21/sentiment-module.git',
+    author='Hamid Moradi',
+    author_email='hordimad21@gmail.com',
 
-    py_modules=['my_pip_package'],
+    packages = find_packages()
 )
