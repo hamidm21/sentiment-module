@@ -6,9 +6,18 @@
 # Punctuation, special characters and numbers
 # Lower casing
 import preprocessor as p
+import pandas as pd
 
 
-def cleaner(content):
+def cleaner(content: pd.DataFrame):
+    """clean the tweets with basic twitter preprocessor
+
+    Args:
+        content (pd.DataFrame): _description_
+
+    Returns:
+        _type_: _description_
+    """
     clean = [0] * len(content)
 
     # forming a separate feature for cleaned tweets

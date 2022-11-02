@@ -3,6 +3,14 @@ from textblob import TextBlob
 
 
 def polarity_blob(content: pd.DataFrame) -> float:
+    """polarity using textblob
+
+    Args:
+        content (pd.DataFrame): _description_
+
+    Returns:
+        float: _description_
+    """
     polarity = [0] * len(content)
     subjectivity = [0] * len(content)
 
