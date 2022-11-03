@@ -1,0 +1,35 @@
+[project]
+name = "mypackage"
+version = "0.0.1"
+dependencies = [
+    "requests >= ",
+    "pandas",
+    "google-search-results",
+    "snscrape",
+
+]
+[build-system]
+# Minimum requirements for the build system to execute.
+requires = [
+    "setuptools<60.0"
+]
+
+[tool.black]
+line-length = 90
+target_version = ['py38', 'py39', 'py310']
+preview = true
+exclude = '''
+/(
+    \.eggs         # exclude a few common directories in the
+  | \.git          # root of the project
+  | \.mypy_cache
+  | \.vscode
+  | build
+  | dist
+  | doc/tutorial
+  | doc/_build
+  | doc/auto_examples
+  | sklearn/externals
+  | asv_benchmarks/env
+)/
+'''
