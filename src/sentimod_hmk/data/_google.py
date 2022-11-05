@@ -4,7 +4,7 @@ import pandas as pd
 # import matplotlib.pyplot as plt
 
 
-def google_trend(phrase: str, date: str = "now 7-d") -> pd.DataFrame:
+def google_trend(phrase: str, period: str = "now 7-d") -> pd.DataFrame:
     """get google trends on a specific phrase and specific date
 
     Args:
@@ -17,7 +17,7 @@ def google_trend(phrase: str, date: str = "now 7-d") -> pd.DataFrame:
 
     listValue = []
     listto = []
-    date_ = date
+    date_ = period
     qword = phrase
     params = {
         "engine": "google_trends",

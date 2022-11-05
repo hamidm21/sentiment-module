@@ -15,12 +15,14 @@ def roberta_pol(content: pd.DataFrame) -> pd.DataFrame:
         pd.DataFrame: _description_
     """
     polarity = [0] * len(content)
-    polarity = analysis(content["Clean"].to_json())
+    polarity = analysis(content["Clean"].values.tolist())
     content["Polarity"] = polarity
     return content
 
 
-def analysis(data: str, model: str = "cardiffnlp/twitter-roberta-base-sentiment-latest"):
+def analysis(
+    data: list[str], model: str = "cardiffnlp/twitter-roberta-base-sentiment-latest"
+):
     """sentiment analysis by the chosen model
 
     Args:
