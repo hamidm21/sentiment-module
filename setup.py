@@ -1,9 +1,9 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="sentimod_hmk",
+    name="sentimod",
     version="0.0.1",
-    url="https://github.com/hamidm21/sentiment-module.git",
+    url="https://github.com/Dr-Entezari-s-Lab/sentimod.git",
     author="Hamid Moradi",
     author_email="hordimad21@gmail.com",
     packages=find_packages(),

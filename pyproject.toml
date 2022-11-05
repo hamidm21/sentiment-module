@@ -1,5 +1,5 @@
 [project]
-name = "sentimod_hmk"
+name = "sentimod"
 version = "0.0.1"
 authors = [
   { name="Hamid Moradi", email="hordimad21@gmail.com" },
@@ -19,9 +19,6 @@ dependencies = [
     "snscrape",
     "tweet-preprocessor"
 ]
-
-[project.urls]
-"Homepage" = "https://github.com/hamidm21/sentiment-module.git"
 
 [build-system]
 requires = ["setuptools>=61.0"]
