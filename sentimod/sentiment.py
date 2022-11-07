@@ -1,7 +1,7 @@
 from datetime import datetime
 from sentimod.data._twitter import TwitterAPI
 from sentimod.preprocessing._twitter import cleaner
-from sentimod.models._polarity import polarity_blob
+# from sentimod.models._polarity import polarity_blob
 from sentimod.models._huggingface import roberta_pol
 from sentimod.data._google import google_trend
 import pandas as pd
